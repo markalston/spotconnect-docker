@@ -1,3 +1,5 @@
+This fork uses my modified SpotConnect to allow the usage of the shairtunes2 LMS/Lyrion plugin.  The original SpotConnect excludes shairtunes2 from working.  Currently the Spotty plugin no longer supports spotify connect.  Using this docker and adding the shairtunes2 plugin to LMS/Lyrion will get spotify connect functionality back.  Full notes on use are at https://hub.docker.com/repository/docker/beernutmark/spotconnect/general
+
 # spotconnect-docker
 
 A docker image for [SpotConnect](https://github.com/philippe44/SpotConnect).  
