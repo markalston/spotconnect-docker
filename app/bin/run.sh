@@ -56,19 +56,7 @@ fi
 chown -R $PUID:$PGID $HOME_DIR
 chown -R $PUID:$PGID /config
 
-if [[ -z "${SPOTCONNECT_MODE}" ]]; then
-    # Use upnp mode by default
-    SPOTCONNECT_MODE=upnp
-fi
-
-if [[ "${SPOTCONNECT_MODE^^}" == "UPNP" ]]; then
-    SPOTCONNECT_MODE=upnp
-elif [[ "${SPOTCONNECT_MODE^^}" == "RAOP" ]]; then
-    SPOTCONNECT_MODE=raop
-else
-    echo "Invalid SPOTCONNECT_MODE [${SPOTCONNECT_MODE}], must be 'upnp' or 'raop'"
-    exit 1
-fi
+SPOTCONNECT_MODE=raop
 
 binary_file=/app/bin/spot${SPOTCONNECT_MODE}-linux
 if [[ -n "$PREFER_STATIC" ]]; then

@@ -13,7 +13,7 @@ arch_amd64=x86_64
 arch_arm_v7=armv7l
 arch_arm_v8=aarch64
 
-prefix=("spotupnp" "spotraop")
+prefix=("spotraop")
 
 declare -A bin_file_name
 bin_file_name[$arch_amd64]="linux-x86_64"
